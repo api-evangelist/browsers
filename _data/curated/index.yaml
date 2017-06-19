@@ -5,4 +5,91 @@
   url: http://blog.factual.com
   domain: blog.factual.com
   image: ""
+- curated_id: a6e27b3e75fe4f4f2f46541df5366ac8
+  item_date: "2016-03-14 00:00:00"
+  title: Browser Integration
+  url: http://blog.pandorabots.com/browser-integration/
+  domain: blog.pandorabots.com
+  image: ""
+- curated_id: 8f03e657ed342088426793dde0861835
+  item_date: "2016-04-04 00:00:00"
+  title: ?Twitter for GitHub? Chrome extension adds your @handle to profiles because
+    of course you need that
+  url: http://thenextweb.com/dd/2016/04/04/twitter-for-github-chrome-extension/
+  domain: thenextweb.com
+  image: ""
+- curated_id: 29707bff1106f7883f397b1619b4b9dd
+  item_date: "2016-04-07 11:55:51"
+  title: Clearbit Connect?s new Gmail widget can help you find anyone?s email address
+  url: http://techcrunch.com/2016/04/07/clearbit-connects-new-gmail-widget-can-help-you-find-anyones-email-address/
+  domain: techcrunch.com
+  image: ""
+- curated_id: def30682a60e9e1f689e42d605602d58
+  item_date: "2016-08-21 00:00:00"
+  title: CRX Extractor ? Get any Chrome Extension source code. Learn and hack!
+  url: http://crxextractor.com
+  domain: crxextractor.com
+  image: ""
+- curated_id: a46bba75486616672e6edaa2f746073d
+  item_date: "2016-08-22 00:00:00"
+  title: Using the Postman Chrome App? Implications from the Recent Google Announcement
+  url: http://blog.getpostman.com/2016/08/23/using-the-postman-chrome-app-implications-from-the-recent-google-announcement/
+  domain: blog.getpostman.com
+  image: ""
+- curated_id: b612b9bfd01da5604933109b22c14a72
+  item_date: "2016-08-24 00:00:00"
+  title: Track Email Opens and Look Up Contacts With the Chrome Extension
+  url: http://www.activecampaign.com/blog/chrome-extension-update/
+  domain: www.activecampaign.com
+  image: ""
+- curated_id: 739d9c6385102d0917e6f8ad613dad1d
+  item_date: "2016-09-06 00:00:00"
+  title: ThoughtPad 2.0 ? An online autosaving notepad + Chrome plugin
+  url: https://thoughtpad.kingdomofs.com/
+  domain: thoughtpad.kingdomofs.com
+  image: ""
+- curated_id: e8f4cc83e14bfbe321fa8bb7c786b8e8
+  item_date: "2016-09-08 00:00:00"
+  title: Google Chrome to start marking HTTP connections as insecure
+  url: http://www.pcworld.com/article/3118164/security/google-chrome-to-start-marking-http-connections-as-insecure.html#tk.rss_all
+  domain: www.pcworld.com
+  image: ""
+- curated_id: 992a50b20c38fddcebb07ceed3036bda
+  item_date: "2016-09-15 00:00:00"
+  title: Google Chrome To Flag Non-HTTPS Logins, Credit Card Info Not Secure
+  url: http://www.darkreading.com/vulnerabilities---threats/google-chrome-to-flag-non-https-logins-credit-card-info-not-secure/d/d-id/1326921
+  domain: www.darkreading.com
+  image: ""
+- curated_id: 6c3ae0e1dc46fa9c1ad4d3461f8a250e
+  item_date: "2016-09-15 00:00:00"
+  title: Google Safe Browsing API is here to make Android apps a whole lot safer from
+    malware
+  url: http://www.digitaltrends.com/mobile/google-safe-browsing-api-launch/
+  domain: www.digitaltrends.com
+  image: ""
+- curated_id: df7cb67fa1a356ddc897d48171c6d9bb
+  item_date: "2016-09-21 00:00:00"
+  title: Dyn Announces Gauge, A Chrome Browser Extension That Brings Internet Performance
+    To Users? Browsers
+  url: http://dyn.com/blog/dyn-announces-gauge-a-chrome-browser-extension-that-brings-internet-performance-to-users-browsers/
+  domain: dyn.com
+  image: ""
+- curated_id: 6ddc479168286cfe5285584b445f68ee
+  item_date: "2016-10-05 00:00:00"
+  title: What To Do When Chrome Drops Support For Your REST API Testing
+  url: http://blog.smartbear.com/api-testing/chrome-dropping-app-support/
+  domain: blog.smartbear.com
+  image: ""
+- curated_id: d51fd12a52ec4d86b3ba5b303063dcc9
+  item_date: "2016-10-06 00:00:00"
+  title: 'Introducing Push by Zapier: a Universal Chrome Extension for All Your Apps'
+  url: https://zapier.com/blog/push-by-zapier-google-chrome-extension/
+  domain: zapier.com
+  image: ""
+- curated_id: 8037f9e510e0439dc1f5af2e74c092f3
+  item_date: "2016-10-31 10:49:35"
+  title: Mozilla cuts website access to Battery API in Firefox 52
+  url: http://www.ghacks.net/2016/10/31/mozilla-removes-battery-api-in-firefox-52/
+  domain: www.ghacks.net
+  image: ""
 ...
