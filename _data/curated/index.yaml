@@ -92,4 +92,70 @@
   url: http://www.ghacks.net/2016/10/31/mozilla-removes-battery-api-in-firefox-52/
   domain: www.ghacks.net
   image: ""
+- curated_id: 21c256124f32c7be2a708010d72abb82
+  item_date: "2017-01-11 00:00:00"
+  title: "Browser Autofill \u2013 Convenient, but Dangerous to Your Security"
+  url: https://www.eagleeyenetworks.com/browser-autofill-convenient-dangerous-security/
+  domain: www.eagleeyenetworks.com
+  image: ""
+- curated_id: 0303c52d0c3af8d27be566c3ee222b3c
+  item_date: "2017-01-13 00:00:00"
+  title: Meet the Chrome Extension that auto-magically helps dodge 404 error pages
+  url: http://thenextweb.com/insider/2017/01/13/hate-404-errors-install-chrome-extension/
+  domain: thenextweb.com
+  image: ""
+- curated_id: ad971f04a3cd98e7d370f5c7353a7991
+  item_date: "2017-02-03 00:00:00"
+  title: New Chrome beta feature looks to make web apps as powerful as native ones
+  url: http://www.pcworld.com/article/3165364/android/new-chrome-beta-feature-looks-to-make-web-apps-as-powerful-as-native-ones.html#tk.rss_all
+  domain: www.pcworld.com
+  image: ""
+- curated_id: be3f3d9b424a98cd17bfe67061f4b913
+  item_date: "2017-03-07 00:00:00"
+  title: The Best Firefox Add-ons for Developers
+  url: https://stackify.com/the-best-firefox-add-ons-for-developers/
+  domain: stackify.com
+  image: ""
+- curated_id: dae8c8603ede2ff0ce7d328b134280b1
+  item_date: "2017-04-11 00:00:00"
+  title: 'Salesforce Lite: a free Chrome Extension'
+  url: http://blog.clearbit.com/free-salesforce-chrome-extension/
+  domain: blog.clearbit.com
+  image: ""
+- curated_id: 32cd02834acf0113ddaef23364803cef
+  item_date: "2017-04-13 00:00:00"
+  title: "Firefox\u2019s new performance tab is great news for those with old computers"
+  url: https://thenextweb.com/insider/2017/04/13/firefoxs-new-performance-tab-great-news-old-computers/
+  domain: thenextweb.com
+  image: ""
+- curated_id: 885c0a483e60b3da30417089c81901e1
+  item_date: "2017-04-19 00:00:00"
+  title: Google said to be planning a built-in ad blocker for Chrome
+  url: https://techcrunch.com/2017/04/19/google-said-to-be-planning-a-built-in-ad-blocker-for-chrome/
+  domain: techcrunch.com
+  image: ""
+- curated_id: bc4ee12ebdb3149a9fa9976906744f89
+  item_date: "2017-04-19 00:00:00"
+  title: Google Releases Security Updates for Chrome
+  url: https://www.us-cert.gov/ncas/current-activity/2017/04/19/Google-Releases-Security-Updates-Chrome
+  domain: www.us-cert.gov
+  image: ""
+- curated_id: f7ddc52c52d72c2cb4e67c3a1d8fc716
+  item_date: "2017-04-20 00:00:00"
+  title: Google Developing Own Ad Blocker for Chrome
+  url: http://www.pcmag.com/news/353174/google-developing-own-ad-blocker-for-chrome
+  domain: www.pcmag.com
+  image: ""
+- curated_id: 10492acbe033a4069423962258dc3ae0
+  item_date: "2017-04-20 00:00:00"
+  title: Google, the advertising company, could bring native adblocking to Chrome
+  url: http://www.niemanlab.org/2017/04/google-the-advertising-company-could-bring-native-adblocking-to-chrome/
+  domain: www.niemanlab.org
+  image: ""
+- curated_id: be9929a9511982c5e1021c4bce40fee0
+  item_date: "2017-04-28 00:00:00"
+  title: Develop a custom chrome extension
+  url: https://www.freelancer.com.pe/projects/php/Develop-custom-chrome-extension/
+  domain: www.freelancer.com.pe
+  image: ""
 ...
