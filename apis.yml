@@ -1,0 +1,129 @@
+aid: browsers
+name: Browsers
+description: >-
+  An index and topic collection covering programmable browsers, headless browser engines, and browser-automation APIs. The Browsers topic focuses on the
+  browser execution surface — the runtime where pages are loaded, JavaScript is evaluated, and interactions are scripted — including local libraries like
+  Puppeteer, Playwright, and Selenium, as well as managed browser-as-a-service platforms used for automation, data extraction, agentic web tasks, and
+  cross-browser testing. This collection is distinct from web scraping and pure test-runner topics; it emphasizes the browser instance, session, and
+  navigation surface that other automation, scraping, and AI-agent capabilities build on top of.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Headless Browser
+- Browser Automation
+- Web Automation
+- Browser-as-a-Service
+- WebDriver
+- Browser Testing
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/browsers/refs/heads/main/apis.yml
+created: '2026-05-19'
+modified: '2026-05-19'
+specificationVersion: '0.19'
+apis: []
+network:
+- name: AgentQL
+  url: https://raw.githubusercontent.com/api-evangelist/agentql/refs/heads/main/apis.yml
+- name: Apify
+  url: https://raw.githubusercontent.com/api-evangelist/apify/refs/heads/main/apis.yml
+- name: API Snap
+  url: https://raw.githubusercontent.com/api-evangelist/api-snap/refs/heads/main/apis.yml
+- name: Appium
+  url: https://raw.githubusercontent.com/api-evangelist/appium/refs/heads/main/apis.yml
+- name: Apple Safari
+  url: https://raw.githubusercontent.com/api-evangelist/apple-safari/refs/heads/main/apis.yml
+- name: Bright Data
+  url: https://raw.githubusercontent.com/api-evangelist/bright-data/refs/heads/main/apis.yml
+- name: Browser Use
+  url: https://raw.githubusercontent.com/api-evangelist/browser-use/refs/heads/main/apis.yml
+- name: BrowserStack
+  url: https://raw.githubusercontent.com/api-evangelist/browserstack/refs/heads/main/apis.yml
+- name: Checkly
+  url: https://raw.githubusercontent.com/api-evangelist/checkly/refs/heads/main/apis.yml
+- name: Crawlee
+  url: https://raw.githubusercontent.com/api-evangelist/crawlee/refs/heads/main/apis.yml
+- name: Cucumber
+  url: https://raw.githubusercontent.com/api-evangelist/cucumber/refs/heads/main/apis.yml
+- name: Google Chrome
+  url: https://raw.githubusercontent.com/api-evangelist/google-chrome/refs/heads/main/apis.yml
+- name: Microsoft Edge
+  url: https://raw.githubusercontent.com/api-evangelist/microsoft-edge/refs/heads/main/apis.yml
+- name: Microsoft Playwright
+  url: https://raw.githubusercontent.com/api-evangelist/microsoft-playwright/refs/heads/main/apis.yml
+- name: Playwright
+  url: https://raw.githubusercontent.com/api-evangelist/playwright/refs/heads/main/apis.yml
+- name: Puppeteer
+  url: https://raw.githubusercontent.com/api-evangelist/puppeteer/refs/heads/main/apis.yml
+- name: Scrapfly
+  url: https://raw.githubusercontent.com/api-evangelist/scrapfly/refs/heads/main/apis.yml
+- name: ScrapingAnt
+  url: https://raw.githubusercontent.com/api-evangelist/scrapingant/refs/heads/main/apis.yml
+- name: ScrapingBee
+  url: https://raw.githubusercontent.com/api-evangelist/scrapingbee/refs/heads/main/apis.yml
+- name: Selenium
+  url: https://raw.githubusercontent.com/api-evangelist/selenium/refs/heads/main/apis.yml
+- name: Servo
+  url: https://raw.githubusercontent.com/api-evangelist/servo/refs/heads/main/apis.yml
+common:
+- type: Portal
+  url: https://apievangelist.com
+- type: GitHubOrganization
+  url: https://github.com/api-evangelist
+- type: Features
+  data:
+  - name: Headless Browser Execution
+    description: Programmable browser runtimes like Chromium, WebKit, and Gecko driven without a visible UI for automated navigation, rendering, and DOM interaction.
+  - name: Browser Automation Libraries
+    description: Client libraries like Puppeteer, Playwright, and Selenium that expose a high-level API for controlling browser sessions, pages, frames, and inputs.
+  - name: Browser-as-a-Service
+    description: Managed cloud platforms that provision pre-warmed browser instances over WebSocket, CDP, or HTTP so consumers do not have to host their own browser fleet.
+  - name: Session and Profile Management
+    description: APIs for creating, persisting, and reusing browser sessions, cookies, localStorage, fingerprints, and authenticated profiles across runs.
+  - name: Navigation and DOM Interaction
+    description: A consistent surface for navigating to URLs, waiting for selectors, clicking, typing, scrolling, evaluating JavaScript, and capturing rendered DOM state.
+  - name: Network and Stealth Controls
+    description: Proxy routing, header and user-agent customization, request interception, and anti-bot evasion controls layered on top of the browser instance.
+  - name: Capture and Artifact APIs
+    description: Endpoints for screenshots, full-page PDFs, HAR network logs, video recordings, and trace files generated from automated browser sessions.
+  - name: Agent-Ready Browser Surfaces
+    description: AI-agent oriented interfaces, including Model Context Protocol servers and natural-language navigation, that expose a browser as a tool for LLMs.
+- type: UseCases
+  data:
+  - name: Automated Web Data Extraction
+    description: Drive a real browser to render JavaScript-heavy pages and extract structured data that static HTTP scraping cannot reach.
+  - name: Cross-Browser End-to-End Testing
+    description: Run application tests against Chromium, Firefox, and WebKit on real or virtualized devices to validate behavior before release.
+  - name: Synthetic Monitoring and Uptime Checks
+    description: Schedule scripted browser flows to continuously verify that critical user journeys remain functional in production.
+  - name: Agentic Web Task Execution
+    description: Provide AI agents with a controlled browser session so they can complete multi-step tasks like form filling, booking, and research.
+  - name: Visual and PDF Generation
+    description: Render web content to high-fidelity screenshots, social-share images, or PDF reports on demand via a managed browser API.
+  - name: Authenticated Session Automation
+    description: Maintain logged-in browser profiles so automation can perform actions inside customer-account areas across runs.
+  - name: Accessibility and Performance Audits
+    description: Execute Lighthouse, axe, and similar audits inside a real browser to track accessibility and performance regressions over time.
+  - name: Legacy Application Robotics
+    description: Use browser automation as a UI-layer integration mechanism for systems that lack a usable API.
+- type: Integrations
+  data:
+  - name: Playwright
+    description: Open-source browser automation library from Microsoft that drives Chromium, Firefox, and WebKit through a unified API.
+  - name: Puppeteer
+    description: Node.js library from the Chrome team that controls headless Chromium via the Chrome DevTools Protocol.
+  - name: Selenium
+    description: Long-standing browser automation suite built around WebDriver, used heavily for cross-browser end-to-end testing.
+  - name: BrowserStack
+    description: Cloud browser and device platform providing real browsers and devices for automated and live cross-browser testing.
+  - name: Bright Data Scraping Browser
+    description: Managed remote browser endpoint with built-in proxies and anti-bot infrastructure for large-scale automation.
+  - name: Apify
+    description: Web automation platform whose Actors run Puppeteer and Playwright workloads at scale on managed infrastructure.
+  - name: Browser Use
+    description: AI-agent oriented library that gives LLMs a controllable browser as a tool surface for autonomous web tasks.
+  - name: Checkly
+    description: Synthetic monitoring platform that runs Playwright scripts on a schedule to validate production user journeys.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+humanURL: https://apievangelist.com

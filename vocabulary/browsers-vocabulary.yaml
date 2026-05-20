@@ -1,0 +1,254 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: Browsers
+  description: Vocabulary for the Browsers topic, covering programmable browsers, headless browser libraries, browser-as-a-service platforms, and browser-automation APIs.
+  created: '2026-05-19'
+  modified: '2026-05-19'
+
+operational:
+  apis:
+    - name: Playwright
+      namespace: playwright
+      status: active
+    - name: Puppeteer
+      namespace: puppeteer
+      status: active
+    - name: Selenium WebDriver
+      namespace: selenium
+      status: active
+    - name: BrowserStack Automate
+      namespace: browserstack
+      status: active
+    - name: Bright Data Scraping Browser
+      namespace: bright-data
+      status: active
+    - name: Browser Use
+      namespace: browser-use
+      status: active
+
+  resources:
+    - name: sessions
+      description: Programmable browser sessions provisioned for automation runs
+      actions:
+        - create
+        - get
+        - list
+        - close
+    - name: pages
+      description: Individual page or tab contexts inside a browser session
+      actions:
+        - create
+        - get
+        - close
+        - navigate
+    - name: actions
+      description: Navigation and interaction steps executed against a page
+      actions:
+        - execute
+        - list
+    - name: profiles
+      description: Persisted browser profiles encapsulating cookies, storage, and fingerprints
+      actions:
+        - create
+        - get
+        - list
+        - delete
+    - name: artifacts
+      description: Captured outputs from a session such as screenshots, PDFs, HARs, and traces
+      actions:
+        - create
+        - get
+        - list
+
+  actions:
+    - name: create
+      description: Provision a new browser session, profile, or artifact
+      httpMethod: POST
+      pattern: write
+    - name: get
+      description: Retrieve a single resource by identifier
+      httpMethod: GET
+      pattern: read
+    - name: list
+      description: Enumerate resources
+      httpMethod: GET
+      pattern: read
+    - name: navigate
+      description: Drive a page to a target URL
+      httpMethod: POST
+      pattern: write
+    - name: execute
+      description: Run a navigation or interaction action against a page
+      httpMethod: POST
+      pattern: write
+    - name: close
+      description: Tear down a session or page
+      httpMethod: DELETE
+      pattern: destructive
+    - name: delete
+      description: Remove a stored profile or artifact
+      httpMethod: DELETE
+      pattern: destructive
+
+  schemas:
+    core:
+      - name: BrowserSession
+        description: A single programmable browser session backed by a headless library or browser-as-a-service platform
+        properties:
+          - id
+          - provider
+          - engine
+          - headless
+          - viewport
+          - user_agent
+          - proxy
+          - stealth
+          - profile_id
+          - connection_url
+          - status
+          - created_at
+      - name: NavigationAction
+        description: A navigation or interaction step executed inside a browser session
+        properties:
+          - action
+          - session_id
+          - url
+          - selector
+          - value
+          - wait_until
+          - timeout_ms
+          - capture
+          - status
+          - duration_ms
+
+  enums:
+    browser_engines:
+      - chromium
+      - firefox
+      - webkit
+      - edge
+      - safari
+      - servo
+    session_status:
+      - pending
+      - running
+      - idle
+      - closed
+      - failed
+    action_types:
+      - goto
+      - click
+      - type
+      - select
+      - wait_for_selector
+      - wait_for_load
+      - scroll
+      - evaluate
+      - screenshot
+      - pdf
+      - extract
+      - set_cookie
+      - intercept_request
+    proxy_types:
+      - none
+      - datacenter
+      - residential
+      - isp
+      - mobile
+
+capability:
+  workflows:
+    - name: Headless Data Extraction
+      description: Provision a browser session, render a JavaScript-heavy page, and extract structured data
+      apis:
+        - playwright
+        - puppeteer
+        - bright-data
+        - scrapingbee
+      personas:
+        - Automation Engineer
+      domains:
+        - Browser Automation
+    - name: Cross-Browser End-to-End Testing
+      description: Run a test suite across Chromium, Firefox, and WebKit on real or virtual devices
+      apis:
+        - playwright
+        - selenium
+        - browserstack
+      personas:
+        - QA Engineer
+      domains:
+        - Browser Testing
+    - name: Agentic Web Task
+      description: Give an AI agent a controlled browser to complete multi-step web tasks
+      apis:
+        - browser-use
+        - agentql
+        - playwright
+      personas:
+        - AI Agent Developer
+      domains:
+        - Agentic Automation
+    - name: Synthetic Monitoring
+      description: Schedule a browser script to validate critical production user journeys
+      apis:
+        - checkly
+        - playwright
+      personas:
+        - SRE
+      domains:
+        - Browser Monitoring
+
+  personas:
+    - id: automation-engineer
+      name: Automation Engineer
+      description: Engineers building browser-driven automation for data extraction or operational workflows
+      workflows:
+        - Headless Data Extraction
+    - id: qa-engineer
+      name: QA Engineer
+      description: Engineers validating application behavior across browsers and devices
+      workflows:
+        - Cross-Browser End-to-End Testing
+    - id: ai-agent-developer
+      name: AI Agent Developer
+      description: Developers wiring browsers into LLM-driven agents as a tool surface
+      workflows:
+        - Agentic Web Task
+    - id: sre
+      name: SRE
+      description: Reliability engineers running synthetic browser checks against production
+      workflows:
+        - Synthetic Monitoring
+
+  domains:
+    - name: Browser Automation
+      description: Programmatic control of browser sessions to drive navigation, interaction, and extraction
+    - name: Browser Testing
+      description: Use of programmable browsers to validate application behavior across engines and devices
+    - name: Agentic Automation
+      description: AI-agent-driven use of a browser as a tool surface for autonomous web tasks
+    - name: Browser Monitoring
+      description: Continuous execution of browser scripts to monitor uptime and user-journey health
+
+crossReference:
+  - resource: sessions
+    operations:
+      - create
+      - close
+    workflows:
+      - Headless Data Extraction
+      - Agentic Web Task
+    personas:
+      - Automation Engineer
+      - AI Agent Developer
+  - resource: actions
+    operations:
+      - execute
+    workflows:
+      - Cross-Browser End-to-End Testing
+      - Synthetic Monitoring
+    personas:
+      - QA Engineer
+      - SRE

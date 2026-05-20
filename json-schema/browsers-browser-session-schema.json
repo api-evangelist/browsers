@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/browsers/refs/heads/main/json-schema/browsers-browser-session-schema.json",
+  "title": "BrowserSession",
+  "description": "Represents a single programmable browser session provisioned by a headless browser library or browser-as-a-service platform.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier for the browser session.",
+      "example": "sess_01HXAB3Z9YQ7K2W5N6M8R0T1V3"
+    },
+    "provider": {
+      "type": "string",
+      "description": "Browser provider or library that created the session.",
+      "enum": [
+        "playwright",
+        "puppeteer",
+        "selenium",
+        "browserstack",
+        "bright-data",
+        "apify",
+        "browser-use",
+        "agentql",
+        "scrapingbee",
+        "scrapingant",
+        "scrapfly",
+        "checkly",
+        "appium",
+        "other"
+      ],
+      "example": "playwright"
+    },
+    "engine": {
+      "type": "string",
+      "description": "Underlying browser engine driving the session.",
+      "enum": ["chromium", "firefox", "webkit", "edge", "safari", "servo"],
+      "example": "chromium"
+    },
+    "headless": {
+      "type": "boolean",
+      "description": "Whether the browser is running without a visible UI.",
+      "example": true
+    },
+    "viewport": {
+      "type": "object",
+      "description": "Viewport dimensions used when rendering pages.",
+      "properties": {
+        "width": { "type": "integer", "minimum": 1, "example": 1280 },
+        "height": { "type": "integer", "minimum": 1, "example": 800 }
+      },
+      "required": ["width", "height"]
+    },
+    "user_agent": {
+      "type": "string",
+      "description": "User-Agent string presented by the browser session.",
+      "example": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/126.0.0.0 Safari/537.36"
+    },
+    "proxy": {
+      "type": "object",
+      "description": "Proxy configuration applied to the session.",
+      "properties": {
+        "type": { "type": "string", "enum": ["none", "datacenter", "residential", "isp", "mobile"], "example": "residential" },
+        "country": { "type": "string", "example": "US" }
+      }
+    },
+    "stealth": {
+      "type": "boolean",
+      "description": "Whether anti-bot fingerprint patching is enabled for the session.",
+      "example": true
+    },
+    "profile_id": {
+      "type": "string",
+      "description": "Identifier of a persisted browser profile reused by this session, if any.",
+      "example": "profile_acme_login"
+    },
+    "connection_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "WebSocket or CDP endpoint that a client connects to in order to drive the session.",
+      "example": "wss://chrome.example.com/devtools/browser/9a3f"
+    },
+    "status": {
+      "type": "string",
+      "description": "Current lifecycle state of the session.",
+      "enum": ["pending", "running", "idle", "closed", "failed"],
+      "example": "running"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp the session was created.",
+      "example": "2026-05-19T14:23:11Z"
+    }
+  },
+  "required": ["id", "provider", "engine", "status"]
+}

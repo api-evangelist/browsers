@@ -1,0 +1,14 @@
+{
+  "action": "goto",
+  "session_id": "sess_01HXAB3Z9YQ7K2W5N6M8R0T1V3",
+  "url": "https://example.com/login",
+  "wait_until": "networkidle",
+  "timeout_ms": 30000,
+  "capture": {
+    "screenshot": true,
+    "full_page": false,
+    "format": "png"
+  },
+  "status": "succeeded",
+  "duration_ms": 412
+}

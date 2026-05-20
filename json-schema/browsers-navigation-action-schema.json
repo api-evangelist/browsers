@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/browsers/refs/heads/main/json-schema/browsers-navigation-action-schema.json",
+  "title": "NavigationAction",
+  "description": "Represents a single navigation or interaction step executed inside a programmable browser session.",
+  "type": "object",
+  "properties": {
+    "action": {
+      "type": "string",
+      "description": "Type of action performed against the browser session.",
+      "enum": [
+        "goto",
+        "click",
+        "type",
+        "select",
+        "wait_for_selector",
+        "wait_for_load",
+        "scroll",
+        "evaluate",
+        "screenshot",
+        "pdf",
+        "extract",
+        "set_cookie",
+        "intercept_request"
+      ],
+      "example": "goto"
+    },
+    "session_id": {
+      "type": "string",
+      "description": "Identifier of the browser session this action is dispatched against.",
+      "example": "sess_01HXAB3Z9YQ7K2W5N6M8R0T1V3"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Target URL when the action is a navigation.",
+      "example": "https://example.com/login"
+    },
+    "selector": {
+      "type": "string",
+      "description": "CSS, XPath, or accessibility selector used by the action.",
+      "example": "input[name='email']"
+    },
+    "value": {
+      "type": "string",
+      "description": "Value supplied for type, select, or evaluate actions.",
+      "example": "user@example.com"
+    },
+    "wait_until": {
+      "type": "string",
+      "description": "Page lifecycle event to wait for before the action is considered complete.",
+      "enum": ["load", "domcontentloaded", "networkidle", "commit"],
+      "example": "networkidle"
+    },
+    "timeout_ms": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Maximum time in milliseconds the action may take before failing.",
+      "example": 30000
+    },
+    "capture": {
+      "type": "object",
+      "description": "Optional artifact capture configuration for the action.",
+      "properties": {
+        "screenshot": { "type": "boolean", "example": true },
+        "full_page": { "type": "boolean", "example": false },
+        "format": { "type": "string", "enum": ["png", "jpeg", "webp", "pdf"], "example": "png" }
+      }
+    },
+    "status": {
+      "type": "string",
+      "description": "Outcome of the action after execution.",
+      "enum": ["pending", "succeeded", "failed", "timed_out"],
+      "example": "succeeded"
+    },
+    "duration_ms": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Wall-clock duration of the action in milliseconds.",
+      "example": 412
+    }
+  },
+  "required": ["action", "session_id"]
+}

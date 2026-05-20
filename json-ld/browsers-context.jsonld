@@ -1,0 +1,101 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "br": "https://api-evangelist.github.io/browsers/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcat": "https://www.w3.org/ns/dcat#",
+
+    "BrowserSession": "br:BrowserSession",
+    "NavigationAction": "br:NavigationAction",
+    "BrowserProfile": "br:BrowserProfile",
+    "ScreenshotRequest": "br:ScreenshotRequest",
+
+    "id": "schema:identifier",
+    "name": "schema:name",
+    "description": "schema:description",
+    "provider": "schema:provider",
+
+    "engine": {
+      "@id": "br:engine",
+      "@type": "xsd:string"
+    },
+    "headless": {
+      "@id": "br:headless",
+      "@type": "xsd:boolean"
+    },
+    "stealth": {
+      "@id": "br:stealth",
+      "@type": "xsd:boolean"
+    },
+    "viewport": {
+      "@id": "br:viewport"
+    },
+    "user_agent": {
+      "@id": "br:user_agent",
+      "@type": "xsd:string"
+    },
+    "proxy": {
+      "@id": "br:proxy"
+    },
+    "profile_id": {
+      "@id": "br:profile_id",
+      "@type": "xsd:string"
+    },
+    "connection_url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "status": {
+      "@id": "br:status",
+      "@type": "xsd:string"
+    },
+    "created_at": {
+      "@id": "dcterms:created",
+      "@type": "xsd:dateTime"
+    },
+
+    "action": {
+      "@id": "br:action",
+      "@type": "xsd:string"
+    },
+    "session_id": {
+      "@id": "br:session_id",
+      "@type": "xsd:string"
+    },
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "selector": {
+      "@id": "br:selector",
+      "@type": "xsd:string"
+    },
+    "value": {
+      "@id": "schema:value",
+      "@type": "xsd:string"
+    },
+    "wait_until": {
+      "@id": "br:wait_until",
+      "@type": "xsd:string"
+    },
+    "timeout_ms": {
+      "@id": "br:timeout_ms",
+      "@type": "xsd:integer"
+    },
+    "duration_ms": {
+      "@id": "br:duration_ms",
+      "@type": "xsd:integer"
+    },
+    "capture": {
+      "@id": "br:capture"
+    },
+
+    "tags": {
+      "@id": "dcat:keyword",
+      "@container": "@set",
+      "@type": "xsd:string"
+    }
+  }
+}

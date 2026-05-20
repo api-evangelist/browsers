@@ -1,0 +1,20 @@
+{
+  "id": "sess_01HXAB3Z9YQ7K2W5N6M8R0T1V3",
+  "provider": "playwright",
+  "engine": "chromium",
+  "headless": true,
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/126.0.0.0 Safari/537.36",
+  "proxy": {
+    "type": "residential",
+    "country": "US"
+  },
+  "stealth": true,
+  "profile_id": "profile_acme_login",
+  "connection_url": "wss://chrome.example.com/devtools/browser/9a3f",
+  "status": "running",
+  "created_at": "2026-05-19T14:23:11Z"
+}
