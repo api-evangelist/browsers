@@ -1,0 +1,24 @@
+title: Browsers
+description: An index and topic collection covering programmable browsers, headless
+  browser engines, and browser-automation APIs. The Browsers topic focuses on the
+  browser execution surface — the runtime where pages are loaded, JavaScript is evaluated,
+  and interactions are scripted — including local libraries like Puppeteer, Playwright,
+  and Selenium, as well as managed browser-as-a-service platforms used for automation,
+  data extraction, agentic web tasks, and cross-browser testing. This collection is
+  distinct from web scraping and pure test-runner topics; it emphasizes the browser
+  instance, session, and navigation surface that other automation, scraping, and AI-agent
+  capabilities build on top of.
+url: https://browsers.apievangelist.com
+collections:
+  api_stories:
+    output: false
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- Dockerfile
+- examples
+- json-ld
+- json-schema
+- json-structure
+- vocabulary
