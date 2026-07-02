@@ -1,0 +1,31 @@
+related:
+- name: Scraping
+  url: https://scraping.apievangelist.com
+  icon: https://scraping.apievangelist.com/icon.png
+  description: An index and topic collection covering web scraping platforms, proxy networks, SERP APIs,
+    browser-based extraction services, and data collection APIs. Scraping platforms turn the…
+- name: Serverless
+  url: https://serverless.apievangelist.com
+  icon: https://serverless.apievangelist.com/icon.png
+  description: An index and topic collection covering serverless compute, function-as-a-service (FaaS)
+    runtimes, and edge function platforms. Serverless platforms abstract away server…
+- name: Performance
+  url: https://performance.apievangelist.com
+  icon: https://performance.apievangelist.com/icon.png
+  description: An index and topic collection covering API and web performance, including load testing,
+    performance benchmarking, real user monitoring (RUM), Core Web Vitals measurement, latency…
+- name: Workflow Automation
+  url: https://workflow-automation.apievangelist.com
+  icon: https://workflow-automation.apievangelist.com/icon.png
+  description: This is the index of workflow automation service and tooling repos being tracked by the
+    API Evangelist network.
+- name: Testing
+  url: https://testing.apievangelist.com
+  icon: https://testing.apievangelist.com/icon.png
+  description: A curated index of services, tooling, and open source solutions for API testing, mocking,
+    load testing, contract testing, and quality assurance. This collection covers functional…
+- name: AI Automation
+  url: https://ai-automation.apievangelist.com
+  icon: https://ai-automation.apievangelist.com/icon.png
+  description: AI automation combines artificial intelligence with workflow and process automation to
+    create intelligent, autonomous systems including AI agent frameworks, autonomous coding…
