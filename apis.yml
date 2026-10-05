@@ -1,5 +1,6 @@
 aid: browsers
 name: Browsers
+kind: topic
 description: >-
   An index and topic collection covering programmable browsers, headless browser engines, and browser-automation APIs. The Browsers topic focuses on the
   browser execution surface — the runtime where pages are loaded, JavaScript is evaluated, and interactions are scripted — including local libraries like
