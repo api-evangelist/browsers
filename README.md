@@ -1,115 +1,97 @@
-# Browsers (browsers)
+# Browsers
+
+<!-- API-EVANGELIST-PROVENANCE:BEGIN -->
+> ### About this repository
+>
+> **This is not our API.** This repository is an independent, third-party profile of a company's
+> **publicly available** API surface, maintained by [API Evangelist](https://apievangelist.com).
+> API Evangelist does not operate, host, resell, or support this company's APIs, and is not
+> affiliated with or endorsed by the company unless stated on the profile.
+>
+> **Where the information came from.** Everything here is assembled from material a member of the
+> public can reach with a browser and no credentials — the company's own website, developer portal
+> and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema,
+> `apis.json`, `llms.txt` and similar), its public repositories, and its public status, pricing and
+> changelog pages. **Nothing here is obtained by breaching a system, defeating an access control, or
+> using credentials of any kind.**
+>
+> **The rating is an independent assessment.** The Kin Score and Agent Readiness rating are
+> independently calculated scores of a company's *public* API artifacts, produced by API Evangelist
+> against a published rubric. They are not certifications, endorsements, security assessments, or
+> audits, and they score published artifacts — not the quality, safety, or security of the software.
+>
+> **Corrections, re-scores, and removal are free.** No partnership, contract, or purchase is
+> required, and you do not need to justify the request.
+>
+> - **Something wrong?** Open an issue on this repository, or email
+>   [info@apievangelist.com](mailto:info@apievangelist.com).
+> - **Published something new?** Ask for a re-score and we will re-run the rating.
+> - **Want the listing taken down?** Say so and we will honor it. The profile is reduced to your
+>   company name, a factual description, and a link to your own site, and the company is recorded as
+>   **unrated** — never scored zero for having asked.
+>
+> **Response times.** Acknowledgement within **one business day**; removal or restriction within
+> **two business days**; corrections and re-scores within **five business days**.
+>
+> **Not from the company, and here with a question?** You are welcome here — we would rather be the
+> front line and point you the right way than have a good report go nowhere. What this repository
+> can answer is narrow, though, so it is worth knowing who you are actually looking for:
+>
+> - **A question about how the API works, an account, billing, or a bug in the service** — that is
+>   the company's own support, not us. We profile this API; we do not operate it and cannot see
+>   your account.
+> - **A bug in an open-source project we only catalog** — file it on that project's own repository.
+>   This has happened with a real and correct bug report that reached us instead of the people who
+>   could fix it, which helped nobody.
+> - **Anything about this listing itself** — the description, the tags, the rating, a missing or
+>   wrong artifact — is ours. Open an issue here.
+> - **Not sure, or something general about API Evangelist or APIs.io** — open an issue on the
+>   [APIs.io Inbox](https://github.com/api-search/inbox) and we will route it.
+>
+> **This repository contains no software, and we will never ask you to download anything.** There is
+> no build, release, installer, or binary here — only text and machine-readable API descriptions, so
+> there is nothing here that can be "corrupt" or need "repairing". Any issue, comment, or email
+> claiming otherwise and offering a download link is not from us and is hostile. Do not follow the
+> link; it is a lure. Report it to GitHub and, if you like, tell us at
+> [info@apievangelist.com](mailto:info@apievangelist.com) so we can take it down.
+>
+> **On a security or compliance team?** Email
+> [info@apievangelist.com](mailto:info@apievangelist.com) with *security* in the subject line and
+> you will get a person, not a form. We will tell you exactly which public URLs this profile was
+> built from so your team can see the same surface we did, and we will take the listing down on
+> request while you work through it.
+>
+> Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
+<!-- API-EVANGELIST-PROVENANCE:END -->
+
 An index and topic collection covering programmable browsers, headless browser engines, and browser-automation APIs. The Browsers topic focuses on the browser execution surface — the runtime where pages are loaded, JavaScript is evaluated, and interactions are scripted — including local libraries like Puppeteer, Playwright, and Selenium, as well as managed browser-as-a-service platforms used for automation, data extraction, agentic web tasks, and cross-browser testing. This collection is distinct from web scraping and pure test-runner topics; it emphasizes the browser instance, session, and navigation surface that other automation, scraping, and AI-agent capabilities build on top of.
 
-**URL:** [https://apievangelist.com](https://apievangelist.com)
+**Areas:** Headless Browser · Browser Automation · Web Automation · Browser-as-a-Service · WebDriver · Browser Testing
 
-## Tags:
+## Browsers on APIs.io
 
- - Headless Browser, Browser Automation, Web Automation, Browser-as-a-Service, WebDriver, Browser Testing
+Everything profiled for Browsers is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/browsers/](https://apis.io/providers/browsers/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+## Where to find this API
 
-- **Created:** 2026-05-19
-- **Modified:** 2026-05-19
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## Common Properties
+- [GitHub](https://github.com/api-evangelist)
 
-- [Portal](https://apievangelist.com)
-- [GitHubOrganization](https://github.com/api-evangelist)
-- [JSONSchema - Browser Session Schema](https://raw.githubusercontent.com/api-evangelist/browsers/refs/heads/main/json-schema/browsers-browser-session-schema.json)
-- [JSONSchema - Navigation Action Schema](https://raw.githubusercontent.com/api-evangelist/browsers/refs/heads/main/json-schema/browsers-navigation-action-schema.json)
-- [JSON-LD](https://raw.githubusercontent.com/api-evangelist/browsers/refs/heads/main/json-ld/browsers-context.jsonld)
-- [Vocabulary](https://raw.githubusercontent.com/api-evangelist/browsers/refs/heads/main/vocabulary/browsers-vocabulary.yaml)
+## API Evangelist rating
 
-## Features
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
 
-| Name | Description |
-|------|-------------|
-| Headless Browser Execution | Programmable browser runtimes like Chromium, WebKit, and Gecko driven without a visible UI for automated navigation, rendering, and DOM interaction. |
-| Browser Automation Libraries | Client libraries like Puppeteer, Playwright, and Selenium that expose a high-level API for controlling browser sessions, pages, frames, and inputs. |
-| Browser-as-a-Service | Managed cloud platforms that provision pre-warmed browser instances over WebSocket, CDP, or HTTP so consumers do not have to host their own browser fleet. |
-| Session and Profile Management | APIs for creating, persisting, and reusing browser sessions, cookies, localStorage, fingerprints, and authenticated profiles across runs. |
-| Navigation and DOM Interaction | A consistent surface for navigating to URLs, waiting for selectors, clicking, typing, scrolling, evaluating JavaScript, and capturing rendered DOM state. |
-| Network and Stealth Controls | Proxy routing, header and user-agent customization, request interception, and anti-bot evasion controls layered on top of the browser instance. |
-| Capture and Artifact APIs | Endpoints for screenshots, full-page PDFs, HAR network logs, video recordings, and trace files generated from automated browser sessions. |
-| Agent-Ready Browser Surfaces | AI-agent oriented interfaces, including Model Context Protocol servers and natural-language navigation, that expose a browser as a tool for LLMs. |
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
 
-## Use Cases
+## How this profile is made
 
-| Name | Description |
-|------|-------------|
-| Automated Web Data Extraction | Drive a real browser to render JavaScript-heavy pages and extract structured data that static HTTP scraping cannot reach. |
-| Cross-Browser End-to-End Testing | Run application tests against Chromium, Firefox, and WebKit on real or virtualized devices to validate behavior before release. |
-| Synthetic Monitoring and Uptime Checks | Schedule scripted browser flows to continuously verify that critical user journeys remain functional in production. |
-| Agentic Web Task Execution | Provide AI agents with a controlled browser session so they can complete multi-step tasks like form filling, booking, and research. |
-| Visual and PDF Generation | Render web content to high-fidelity screenshots, social-share images, or PDF reports on demand via a managed browser API. |
-| Authenticated Session Automation | Maintain logged-in browser profiles so automation can perform actions inside customer-account areas across runs. |
-| Accessibility and Performance Audits | Execute Lighthouse, axe, and similar audits inside a real browser to track accessibility and performance regressions over time. |
-| Legacy Application Robotics | Use browser automation as a UI-layer integration mechanism for systems that lack a usable API. |
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Integrations
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Browsers: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-| Name | Description |
-|------|-------------|
-| Playwright | Open-source browser automation library from Microsoft that drives Chromium, Firefox, and WebKit through a unified API. |
-| Puppeteer | Node.js library from the Chrome team that controls headless Chromium via the Chrome DevTools Protocol. |
-| Selenium | Long-standing browser automation suite built around WebDriver, used heavily for cross-browser end-to-end testing. |
-| BrowserStack | Cloud browser and device platform providing real browsers and devices for automated and live cross-browser testing. |
-| Bright Data Scraping Browser | Managed remote browser endpoint with built-in proxies and anti-bot infrastructure for large-scale automation. |
-| Apify | Web automation platform whose Actors run Puppeteer and Playwright workloads at scale on managed infrastructure. |
-| Browser Use | AI-agent oriented library that gives LLMs a controllable browser as a tool surface for autonomous web tasks. |
-| Checkly | Synthetic monitoring platform that runs Playwright scripts on a schedule to validate production user journeys. |
+## Open an issue
 
-## Artifacts
-
-Machine-readable API specifications organized by format.
-
-### JSON Schema
-
-- [Browser Session Schema](json-schema/browsers-browser-session-schema.json)
-- [Navigation Action Schema](json-schema/browsers-navigation-action-schema.json)
-
-### JSON Structure
-
-- [Browser Session Structure](json-structure/browsers-browser-session-structure.json)
-- [Navigation Action Structure](json-structure/browsers-navigation-action-structure.json)
-
-### JSON-LD
-
-- [Browsers Context](json-ld/browsers-context.jsonld)
-
-## Vocabulary
-
-- [Browsers Vocabulary](vocabulary/browsers-vocabulary.yaml) — Unified taxonomy of browser-runtime resources, navigation actions, automation workflows, and personas across headless libraries and browser-as-a-service platforms
-
-## Network
-
-This index references the following programmable browser and browser-automation repositories:
-
-- [AgentQL](https://github.com/api-evangelist/agentql)
-- [Apify](https://github.com/api-evangelist/apify)
-- [API Snap](https://github.com/api-evangelist/api-snap)
-- [Appium](https://github.com/api-evangelist/appium)
-- [Apple Safari](https://github.com/api-evangelist/apple-safari)
-- [Bright Data](https://github.com/api-evangelist/bright-data)
-- [Browser Use](https://github.com/api-evangelist/browser-use)
-- [BrowserStack](https://github.com/api-evangelist/browserstack)
-- [Checkly](https://github.com/api-evangelist/checkly)
-- [Crawlee](https://github.com/api-evangelist/crawlee)
-- [Cucumber](https://github.com/api-evangelist/cucumber)
-- [Google Chrome](https://github.com/api-evangelist/google-chrome)
-- [Microsoft Edge](https://github.com/api-evangelist/microsoft-edge)
-- [Microsoft Playwright](https://github.com/api-evangelist/microsoft-playwright)
-- [Playwright](https://github.com/api-evangelist/playwright)
-- [Puppeteer](https://github.com/api-evangelist/puppeteer)
-- [Scrapfly](https://github.com/api-evangelist/scrapfly)
-- [ScrapingAnt](https://github.com/api-evangelist/scrapingant)
-- [ScrapingBee](https://github.com/api-evangelist/scrapingbee)
-- [Selenium](https://github.com/api-evangelist/selenium)
-- [Servo](https://github.com/api-evangelist/servo)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/browsers/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
